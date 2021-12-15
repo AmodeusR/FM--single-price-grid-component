@@ -5,46 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./single-price-grid-component/css/main.css">
   <title>Frontend Mentor | Single Price Grid Component</title>
+  <link rel="stylesheet" href="./css/main.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Makes the target of links open in a new tab as default behavior -->
+  <base target="_blank">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  Join our community
 
-  30-day, hassle-free money back guarantee
+  <div class="center">
+    <div class="container">
+      <div class="card grid-colspan-2">
+        <h1 class="card__title card__title--cyan">Join our community</h1>
+        <h2 class="card__subtitle card__subtitle--accent">30-day, hassle-free omney back guarantee</h2>
+        <p class="card__description">
+          Gain access to our full library of tutorials along with expert code reviews.
+          Perfect for any developers who are serious about honing their skills.
+        </p>
+      </div>
+      <div class="card card--primary">
+        <h2 class="card__title">Monthly Subscription</h2>
+        <div class="card__price-info">
+          <p><span class="price">$29</span> <span class="grayed-out">per month</span></p>
+          <p>Full access for less than $1 a day</p>
+          <button class="card__button">Sign Up</button>
+        </div>
+      </div>
+      <div class="card card--primary-light">
+        <h2 class="card__title">Why us</h2>
+        <ul class="list">
+          <li class="list__item">Tutorials by industry experts</li>
+          <li class="list__item">Peer &amp; expert code review</li>
+          <li class="list__item">Coding Exercises</li>
+          <li class="list__item">Access to our GitHub repos</li>
+          <li class="list__item">Community forum</li>
+          <li class="list__item">Flashcard decks</li>
+          <li class="list__item">New videos every week</li>
+        </ul>
+      </div>
+    </div>
+    <footer class="credits">
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/amodeusr">Amodeus R</a>.
+      </p>
+    </footer>
+  </div>
 
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
   
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
 </body>
 </html>

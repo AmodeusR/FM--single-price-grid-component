@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin-top: 0.5rem;
+  font-family: "Karla", sans-serif;
+  background: #e5eff5;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: min(20rem, 95%);
+  justify-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+@media (min-width: 60em) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    width: min(45rem, 100%);
+  }
+}
+
+@media (min-width: 60em) {
+  .grid-colspan-2 {
+    grid-column: 1/3;
+  }
+}
+
+.grayed-out {
+  color: #fff8;
+}
+
+.card {
+  background: white;
+  width: 100%;
+  padding: 2rem;
+  box-shadow: 2px 2px 25px 5px rgba(44, 34, 90, 0.1);
+  margin: 0;
+}
+@media (min-width: 60em) {
+  .card {
+    width: 100%;
+  }
+}
+.card__description {
+  color: #98a6bd;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+.card__button {
+  width: 100%;
+  padding: 1rem 0;
+  margin-left: -4px;
+  color: white;
+  font-weight: 700;
+  background: #c0df34;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 3px 8px 10px 5px rgba(63, 99, 85, 0.2);
+  transition: all 300ms ease;
+}
+.card__button:hover {
+  transform: scale(1.05);
+  box-shadow: 8px 12px 15px 8px rgba(63, 99, 85, 0.1);
+  background: #cee660;
+}
+.card__button--top-border-round {
+  border-radius: 8px 8px 0 0;
+}
+.card__button--bottom-border-round {
+  border-radius: 0 0 8px 8px;
+}
+.card--primary {
+  background: #3dd1cf;
+  color: white;
+}
+.card--primary-light {
+  background: #7be0de;
+  color: white;
+}
+.card__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+.card__title--cyan {
+  color: #3dd1cf;
+}
+.card__subtitle {
+  font-size: 1.1rem;
+  margin: 1.5rem 0;
+}
+.card__subtitle--accent {
+  color: #c0df34;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+.list__item + .list__item {
+  margin-top: 0.4rem;
+}
+
+.attribution {
+  font-size: 0.65rem;
+  text-align: center;
+  font-weight: bold;
+}
+.attribution a {
+  color: #3e52a3;
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+.attribution a:hover {
+  color: #455bb5;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,171 @@
+@use "./colors" as *;
+
+$border-r: 8px;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@function getColor($color) {
+  @return map-get($theme-colors, $color);
+}
+
+
+
+@mixin desktop {
+  @media (min-width: 60em) {
+    @content;
+  }
+}
+
+body {
+  min-height: 100vh;
+  margin-top: .5rem;
+  font-family: "Karla", sans-serif;
+  background: getColor(light-gray);
+  
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: min(20rem, 95%);
+
+  justify-items: center;
+  border-radius: $border-r;
+  overflow: hidden;
+  margin: 0 auto;
+  
+  @include desktop {
+    grid-template-columns: repeat(2, 1fr);
+    width: min(45rem, 100%);
+  }
+}
+
+.grid-colspan-2 {
+  @include desktop {
+    grid-column: 1 / 3;
+  }
+}
+
+.grayed-out {
+  color: #fff8;
+}
+
+.card {
+  background: white;
+  width: 100%;
+  padding: 2rem;
+  box-shadow: 2px 2px 25px 5px rgba(44, 34, 90, .1);
+  margin: 0;
+  
+  
+  @include desktop {
+    width: 100%;
+  }
+
+  &__description {
+    color: getColor(grayish-blue);
+    margin-bottom: 0;
+    font-size: .9rem;
+    line-height: 1.5rem;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 1rem 0;
+    margin-left: -4px;
+    color: white; 
+    font-weight: 700;
+    background: getColor(accent);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 3px 8px 10px 5px rgba(63, 99, 85, .2);
+    transition: all 300ms ease;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 8px 12px 15px 8px rgba(63, 99, 85, .1);
+      background: lighten(getColor(accent), 10%);
+    }
+
+    &--top-border-round {
+      border-radius: $border-r $border-r 0 0;
+    }
+
+    &--bottom-border-round {
+      border-radius: 0 0 $border-r $border-r;
+    }
+  }
+
+  &--primary {
+    background: getColor(primary);
+    color: white;
+  }
+
+  &--primary-light {
+    background: lighten(getColor(primary), 15%);
+    color: white;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight:700;
+    margin: 0;
+
+    &--cyan {
+      color: getColor(primary);
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+
+    &--accent {
+      color: getColor(accent);
+    }
+  }
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: .5rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+
+  &__item + &__item {
+    margin-top: .4rem;
+  }
+}
+
+.attribution {
+  font-size: .65rem;
+  text-align: center;
+  font-weight: bold;
+  
+  a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    transition: color 200ms ease;
+
+    &:hover {
+      color: lighten(hsl(228, 45%, 44%), 5%);
+    }
+  }
+}

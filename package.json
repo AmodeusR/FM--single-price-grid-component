@@ -1,0 +1,13 @@
+{
+  "name": "single-price-grid-component",
+  "version": "1.0.0",
+  "description": "Challenge code for the Single price grid component coding challenge",
+  "scripts": {
+    "watch": "sass --watch scss:css"
+  },
+  "author": "Amodeus R.",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.44.0"
+  }
+}
