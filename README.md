@@ -1,2 +1,5 @@
-# FM--single-price-grid-component
- A Frontend Mentor challenge
+# Frontend Mentor - Single price grid component
+
+![Design preview for the Single price grid component coding challenge](./design/desktop-preview.jpg)
+
+Work in Progress
