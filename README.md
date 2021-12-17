@@ -17,20 +17,20 @@
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
 
 ### The challenge
 
-- list challenges
+- View the optimal layout for the component depending on their device's screen size
+- See a hover state on desktop for the Sign Up call-to-action
 
 ### Screenshots
 
 | Desktop View (1280px) | iPad View (768px) | iPhone View (375px)|
 |-------|-------|-------|
-|![Desktop View (1280px)](./page-models/desktop.png)|![iPad View (768px)](./page-models/ipad.png)|![iPhone View (375px)](./page-models/mobile-iphone.png)|
+|![Desktop View (1280px)](./page-models/desktop.png)|![iPad View (768px)](./page-models/ipad.png)|![iPhone View (375px)](./page-models/mobile.png)|
 
 ### Links
 
@@ -40,16 +40,10 @@
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
 - Mobile-first workflow
-- Vanilla Javascript
-
-### What I learned
-
-Describe what you learned
+- CSS Grid
+- Flexbox
+- Sass
 
 ## Author
 
