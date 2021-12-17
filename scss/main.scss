@@ -157,17 +157,18 @@ body {
 }
 
 .attribution {
-  font-size: .65rem;
+  font-size: .85rem;
   text-align: center;
   font-weight: bold;
+  color: #777;
   
   a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(228, 45%, 54%);
     text-decoration: none;
     transition: color 200ms ease;
 
     &:hover {
-      color: lighten(hsl(228, 45%, 44%), 5%);
+      color: lighten(hsl(228, 75%, 50%), 20%);
     }
   }
 }

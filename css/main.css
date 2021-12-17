@@ -122,17 +122,18 @@ body {
 }
 
 .attribution {
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   text-align: center;
   font-weight: bold;
+  color: #777;
 }
 .attribution a {
-  color: #3e52a3;
+  color: #556abe;
   text-decoration: none;
   transition: color 200ms ease;
 }
 .attribution a:hover {
-  color: #455bb5;
+  color: #7990ec;
 }
 
 /*# sourceMappingURL=main.css.map */
